@@ -1,0 +1,120 @@
+main {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.car-image-container {
+  width: 100%;
+  min-height: 800px;
+  height: 100vh;
+  position: relative;
+  background-image: url("../../assets/cars-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.logo-image-container {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.logo-image {
+  width: 180px;
+  height: 150px;
+}
+
+.underLogo-text {
+  margin-top: 20px;
+}
+
+.authorization-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.time-container {
+  width: 311px;
+  height: 92px;
+  background-color: #5a64cb;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.time-container hr {
+  height: 60%;
+  position: absolute;
+  opacity: 0.2;
+  left: 50%;
+}
+
+.time-circle {
+  width: 112px;
+  height: 44px;
+  border-radius: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniAuth-container {
+  width: 60%;
+  background-color: #5a64cb;
+  height: 92px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-inline: 10px;
+}
+
+.user-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4951a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.auth-btn {
+  width: 200px;
+  height: 73px;
+  background-color: #38b413;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.open-bottle-container {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.timer-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
