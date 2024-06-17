@@ -19,8 +19,6 @@ const Slider = () => {
         spaceBetween={50}
         slidesPerView="auto"
         style={{ paddingInline: "20px" }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {slides.map((slide, index) => (
           <SwiperSlide

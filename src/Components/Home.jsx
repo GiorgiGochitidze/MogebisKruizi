@@ -4,6 +4,7 @@ import text from "../assets/text.png";
 import userIcon from "../assets/userIcon.png";
 import IslandImageSVG from "./IslandImageSVG";
 import Slider from "./Slider";
+import PrizeList from "./PrizeList";
 
 const Home = () => {
   return (
@@ -62,6 +63,8 @@ const Home = () => {
       </div>
 
       <Slider />
+
+      <PrizeList />
     </main>
   );
 };
