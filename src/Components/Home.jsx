@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import text from "../assets/text.png";
 import userIcon from "../assets/userIcon.png";
 import IslandImageSVG from "./IslandImageSVG";
+import Slider from "./Slider";
 
 const Home = () => {
   return (
@@ -59,6 +60,8 @@ const Home = () => {
       <div className="open-bottle-container">
         <IslandImageSVG />
       </div>
+
+      <Slider />
     </main>
   );
 };

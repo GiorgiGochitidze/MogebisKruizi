@@ -1,0 +1,16 @@
+.bottles-container {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.higher2{
+  bottom: 45px;
+}
