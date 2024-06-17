@@ -114,3 +114,31 @@
   transform: translateX(-50%);
   text-align: center;
 }
+
+@media screen and (max-width: 635px) {
+  .swiper-slide.active {
+    width: 100% !important;
+    height: auto !important;
+    padding-block: 20px;
+  }
+
+  .card-img {
+    width: 70%;
+  }
+
+  .lines-container{
+    bottom: 22%;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .card-logo {
+    display: none;
+  }
+
+  .info-container {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}

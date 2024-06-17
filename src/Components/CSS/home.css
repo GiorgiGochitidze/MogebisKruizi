@@ -111,10 +111,24 @@ main {
   position: relative;
 }
 
-.timer-container{
+.timer-container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .open-bottle-container {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .open-bottle-container {
+    height: 100vh;
+    width: 130vw;
+    margin-left: -18%;
+  }
 }

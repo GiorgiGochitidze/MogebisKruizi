@@ -14,3 +14,9 @@
 .higher2{
   bottom: 45px;
 }
+
+@media screen and (max-width: 635px) {
+  .bottles-container{
+    bottom: 11%;
+  }
+}
