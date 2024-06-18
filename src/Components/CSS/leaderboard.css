@@ -35,6 +35,7 @@
   background: #4956c9;
   transition: 0.2s all;
   position: relative;
+  margin-left: 20px;
 }
 
 .date-slider p {
@@ -317,6 +318,10 @@
 @media screen and (max-width: 600px) {
   .statistic {
     width: 80vw;
+  }
+
+  .arrow-btn{
+    display: none;
   }
 }
 

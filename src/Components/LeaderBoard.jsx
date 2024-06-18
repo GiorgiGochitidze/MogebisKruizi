@@ -58,9 +58,19 @@ const LeaderBoard = () => {
           <MdOutlineKeyboardArrowLeft style={{ opacity: "100%" }} />
         </button>
         <Swiper
-          spaceBetween={50}
-          slidesPerView={"auto"}
+          spaceBetween={0} // Adjust as needed
           onSwiper={setSwiperInstance}
+          loop={false}
+          allowSlideNext={sliderContent.length > 1}
+          allowSlidePrev={sliderContent.length > 1}
+          breakpoints={{
+            320: { slidesPerView: 1 }, // Mobile portrait
+            480: { slidesPerView: 2 }, // Small screens
+            640: { slidesPerView: 3 }, // Mobile landscape
+            768: { slidesPerView: 4 }, // Tablet
+            1024: { slidesPerView: 5 }, // Desktop
+            1440: { slidesPerView: 6 }, // Large screens
+          }}
         >
           {sliderContent.map((date, index) => (
             <SwiperSlide
