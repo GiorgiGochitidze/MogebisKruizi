@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.swiper-slide:hover{
+  cursor: pointer;
+}
+
 .swiper-slide.active {
   width: 588px !important; /* New size for the active slide */
   height: 400px;

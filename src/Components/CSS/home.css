@@ -2,6 +2,10 @@ main {
   width: 100%;
   height: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .car-image-container {

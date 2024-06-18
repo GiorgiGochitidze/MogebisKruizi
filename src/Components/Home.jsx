@@ -5,6 +5,7 @@ import userIcon from "../assets/userIcon.png";
 import IslandImageSVG from "./IslandImageSVG";
 import Slider from "./Slider";
 import PrizeList from "./PrizeList";
+import LeaderBoard from "./LeaderBoard";
 
 const Home = () => {
   return (
@@ -65,6 +66,8 @@ const Home = () => {
       <Slider />
 
       <PrizeList />
+
+      <LeaderBoard />
     </main>
   );
 };
