@@ -1,13 +1,16 @@
 .leaderboard-container {
-  width: 100%;
-  height: auto;
-  background-color: #27318d;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-block: 50px;
-  position: relative;
-}
+    width: 100%;
+    height: auto;
+    background-color: #27318d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 50px;
+    position: relative;
+    gap: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1); /* Add box shadow */
+  }
+  
 
 .date-slider-container {
   width: 100%;
@@ -95,7 +98,7 @@
 }
 
 .statistic {
-  width: 90%;
+  width: 80%;
   height: auto;
   position: relative;
   margin-top: 50px;
@@ -188,11 +191,199 @@
   overflow: hidden;
 }
 
+.leaderboard-list{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid #303BA1;
+    color: #D1D2D8;
+    justify-content: space-between;
+}
+
+.user-img{
+    width: 50px;
+    height: 50px;
+    background-color: #4350BF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 80px;
+}
+
+.users-list{
+    width: 100%;
+    height: 78px;
+    border-bottom: 2px solid #303BA1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position-num{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prize{
+    width: 144px;
+    height: 38px;
+    background-color: #C5367E;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score{
+    min-width: 92px;
+    width: auto;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0482FF;
+    border-radius: 40px;
+    padding-inline: 10px;
+    margin-left: 30px !important;
+}
+
+.info-lastPart{
+    transition: 0.2s all;
+}
+
+.userList-lastPart{
+    transition: 0.2s all;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeSymbol{
+    display: none;
+}
+
+.labels{
+    display: none;
+}
+
+@media screen and (max-width: 790px) {
+    .info-lastPart{
+        gap: 80px !important;
+    }
+
+    .userList-lastPart{
+        gap: 30px !important;
+    }
+  }
+
+  @media screen and (max-width: 666px) {
+
+    .info{
+        font-size: 2.5vw;
+    }
+
+    .leaderboard-list{
+        width: 90%;
+    }
+
+    .info-lastPart{
+        gap: 66px !important;
+    }
+
+    .userList-lastPart{
+        gap: 20px !important;
+    }
+  }
+
 @media screen and (max-width: 600px) {
   .statistic {
     width: 80vw;
   }
 }
+
+@media screen and (max-width: 590px) {
+    .info-lastPart{
+        margin-right: 0 !important;
+    }
+
+    .info{
+        display: none;
+        font-size: 2.8vw;
+    }
+
+    .removeMargin{
+        margin-left: 0 !important;
+    }
+
+    .info-startPart{
+        gap: 30px;
+    }
+
+    .users-list{
+        flex-direction: column;
+        gap: 20px;
+        height: auto;   
+        padding-block: 20px;
+        border-block: 2px solid #4350BF;
+    }
+
+    .placeSymbol{
+        display: flex;
+    }
+
+    .profile{
+        margin: 0 !important;
+    }
+
+    .position-num{
+        margin-left: 15px;
+    }
+
+    .userList-startPart{
+        gap: 75px;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .userList-startPart{
+        gap: 75px;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .score{
+        margin: 0 !important;
+    }
+
+    .labels{
+        display: flex;
+    }
+
+    .half-line{
+        display: flex !important;
+        border-radius: 20px;
+    }
+  }
+  
 
 @media screen and (max-width: 330px) {
   .statistic-cards-container {
@@ -213,4 +404,14 @@
   .static-header-container {
     width: 50%;
   }
+}
+
+@media screen and (max-width: 290px){
+    .userList-lastPart{
+        gap: 10px !important;
+    }
+
+    .userList-startPart{
+        gap: 30px !important;
+    }
 }

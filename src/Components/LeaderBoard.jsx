@@ -7,12 +7,13 @@ import {
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 
-import arrowedBorder from "../assets/arrowedBorder.png";
-import arrowedBorder3 from "../assets/arrowedBorder3.png";
+import users from "./LeaderBoardArray.js";
+
 import purpleRect from "../assets/purpleRect.png";
 import blueRect from "../assets/blueRect.png";
 import redRect from "../assets/redRect.png";
 import { TbTriangleInvertedFilled } from "react-icons/tb";
+import LeaderBoardUsers from "./LeaderBoardUsers";
 
 const LeaderBoard = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -43,6 +44,9 @@ const LeaderBoard = () => {
   const handleSlideClick = (index) => {
     setSelectedSlide(index);
   };
+
+  // Sort users array by score in descending order
+  const sortedUsers = users.sort((a, b) => b.score - a.score);
 
   return (
     <div className="leaderboard-container">
@@ -110,6 +114,34 @@ const LeaderBoard = () => {
             <p>ფრისპინი</p>
           </div>
         </div>
+      </div>
+
+      <div className="leaderboard-list">
+        <div className="info">
+          <div className="info-startPart" style={{ display: "flex" }}>
+            <p>პოზიცია:</p>
+            <p className="removeMargin" style={{ marginLeft: "50px" }}>
+              მომხმარებელი
+            </p>
+          </div>
+          <div
+            className="info-lastPart"
+            style={{ display: "flex", gap: "160px", marginRight: "50px" }}
+          >
+            <p>ლიდერ ქულა</p>
+            <p>პრიზი</p>
+          </div>
+        </div>
+
+        {sortedUsers.map((user, index) => (
+          <LeaderBoardUsers
+            key={index}
+            userName={user.userName}
+            score={user.score}
+            prizeName={user.prizeName}
+            position={index + 1}
+          />
+        ))}
       </div>
     </div>
   );
