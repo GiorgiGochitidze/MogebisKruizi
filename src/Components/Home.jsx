@@ -6,6 +6,7 @@ import IslandImageSVG from "./IslandImageSVG";
 import Slider from "./Slider";
 import PrizeList from "./PrizeList";
 import LeaderBoard from "./LeaderBoard";
+import Questions from "./Questions";
 
 const Home = () => {
   return (
@@ -68,6 +69,8 @@ const Home = () => {
       <PrizeList />
 
       <LeaderBoard />
+
+      <Questions />
     </main>
   );
 };
