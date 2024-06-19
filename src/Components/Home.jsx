@@ -7,11 +7,14 @@ import Slider from "./Slider";
 import PrizeList from "./PrizeList";
 import LeaderBoard from "./LeaderBoard";
 import Questions from "./Questions";
+import carsImgLow from '../assets/carsImgLow.png'
 
 const Home = () => {
+  
   return (
     <main>
       <div className="car-image-container">
+        <img className="resized" style={{width: '100%', height: '100vh', objectFit: 'cover'}} src={carsImgLow} alt="cars background" />
         <div className="logo-image-container">
           <img className="logo-image" src={logo} alt="Logo" />
           <p style={{ marginBlock: "5px" }}>
@@ -27,7 +30,7 @@ const Home = () => {
 
       <div className="authorization-container">
         <div className="time-container">
-          <div style={{ textAlign: "center" }}>
+          <div className="dateMini-container" style={{ textAlign: "center" }}>
             <div style={{ backgroundColor: "#25704C" }} className="time-circle">
               1აპრ. 02:20
             </div>
@@ -36,7 +39,7 @@ const Home = () => {
 
           <hr />
 
-          <div style={{ textAlign: "center" }}>
+          <div className="dateMini-container" style={{ textAlign: "center" }}>
             <div style={{ backgroundColor: "#7B353A" }} className="time-circle">
               1აპრ. 02:20
             </div>
